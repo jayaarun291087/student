@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Buttons from './screens/Buttons';
+import Typography from './screens/Typography';
+import Inputs from './screens/Inputs';
+import SampleForm from './screens/SampleForm';
+import Breadcrumbs from './screens/Breadcrumbs';
+import Cards from './screens/Cards';
+import Layout from './layout/Layout';
+import GlobalStyle from './globalstyle/GlobalStyle';
+import Router from './router/Router';
+import Table from './components/table/Table';
+import TableCom from './screens/Table';
+import NewAdmission from './screens/student/admission/NewAdmission';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router />
+    // <TableCom />
+    // <NewAdmission />
   );
 }
-
 export default App;
